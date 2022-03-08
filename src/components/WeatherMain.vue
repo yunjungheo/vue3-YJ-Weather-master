@@ -1,12 +1,15 @@
 <template>
-  <div class="container">
-    <WeatherToday />
-    <section id="weather">
-      
-      <WeatherList :markerLat="markerLat" :markerLon="markerLon "/>
-      <!-- :markerLat 은 우리가 이름을 지어준것 뒤에는 밑에있는 데이터바인딩해준것 -->
-    </section>
-    <section id="map"></section>
+  <div id="wrap">
+    <div class="container">
+      <WeatherToday />
+      <section id="weather">
+        <WeatherList
+          :marker-lat="markerLat"
+          :marker-lon="markerLon " />
+        <!-- :markerLat 은 우리가 이름을 지어준것 뒤에는 밑에있는 데이터바인딩해준것 -->
+      </section>
+      <section id="map"></section>
+    </div>
   </div>
 </template>
 
@@ -137,30 +140,34 @@ export default {
 <style lang="scss" scoped>
 @import "~/scss/main.scss";
 
-.container {
-  /* width: 25vw; */
-  /* height: 75vh; */
-  width: 300px;
-  height: 650px;
-  padding: 30px;
-  background: linear-gradient(70deg, #131743, #202352);
-  border-radius: 30px;
-  box-shadow: 5px 5px 5px gray;
-  @include c-center();
-
-  #weather {
-    width: 100%;
-    height: 27.67%;
+#wrap{
+  @include center-se();
+  margin-top: 25px;
+  .container {
+    /* width: 25vw; */
+    /* height: 75vh; */
+    width: 300px;
+    height: 650px;
+    padding: 30px;
+    background: linear-gradient(70deg, #131743, #202352);
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px gray;
     @include c-center();
 
-   
-  }
+    #weather {
+      width: 100%;
+      height: 27.67%;
+      @include c-center();
 
-  #map {
-    width: 100%;
-    height: 39%;
-    background-color: #54577556;
-    border-radius: 15px;
+    
+    }
+
+    #map {
+      width: 100%;
+      height: 39%;
+      background-color: #54577556;
+      border-radius: 15px;
+    }
   }
 }
 </style>
