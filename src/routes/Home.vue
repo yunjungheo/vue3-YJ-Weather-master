@@ -10,12 +10,11 @@
           <span>New & Feed</span>
         </p>
         <p class="explain-ko">
-          모바일 자사의 날씨 및 다양한 기상정보를 통해 오늘 하루를
+          날씨 및 다양한 기상정보를 통해 오늘 하루를
           보다 편리하고, 신속정확하게 준비해보세요.
         </p>
         <p class="explain-en">
-          Let's prepare for today more conveniently and accurately through
-          Ubibelox Mobile's weather and various weather information.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, tenetur? 
         </p>
       </div>
       <RouterLink
